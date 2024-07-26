@@ -16,7 +16,7 @@ mongoose.set('strictQuery',true);
 
 connection.once("open", () => {
 
-    console.log("mongodb connectred");
+    console.log("mongodb connected");
 }
 
 
