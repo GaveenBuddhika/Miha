@@ -2,13 +2,13 @@ const express = require("express");
 require("./db/mongoose"); 
 const bodyParser = require("body-parser"); 
 const cors = require("cors");
-const User = require("./models/user");
+const UserRouter = require("./routes/user");
 
 const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use(User);
+app.use(UserRouter);
 
 const port = 4000;
 
